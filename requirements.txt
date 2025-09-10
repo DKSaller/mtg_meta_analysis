@@ -6,3 +6,4 @@ requests
 BeautifulSoup
 re
 time
+cloudscraper
