@@ -39,6 +39,9 @@
           <named-connection caption='post_nerf_combined' name='textscan.0a30vg91oz5c8c1g32vob1obaapr'>
             <connection class='textscan' directory='C:/Users/salle/Desktop/solo_projects/mtg_meta_analysis/data' filename='post_nerf_combined.csv' password='' server='' />
           </named-connection>
+          <named-connection caption='pre_ban_complete' name='textscan.0a54exb0vx6k251a6ely30glo7p3'>
+            <connection class='textscan' directory='C:/Users/salle/Desktop/solo_projects/mtg_meta_analysis/data' filename='pre_ban_complete.csv' password='' server='' />
+          </named-connection>
         </named-connections>
         <relation connection='textscan.0pl4eyl0lhsamo1drm8cl1s7bkyo' name='post_ban_meta.csv' table='[post_ban_meta#csv]' type='table'>
           <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
@@ -110,7 +113,7 @@
       <column caption='Meta Share' datatype='real' name='[Meta_Share]' role='measure' type='quantitative' />
       <column caption='post_ban_meta.csv' datatype='table' name='[__tableau_internal_object_id__].[post_ban_meta.csv_E221A9C9E6904BDCA3BADD346FF519FB]' role='measure' type='quantitative' />
       <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
-        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/salle/AppData/Local/Temp/TableauTemp/#TableauTemp_0mmrf770f0c6031bzo31l034sdpt.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='07/29/2026 02:13:18 PM' username='tableau_internal_user'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/salle/AppData/Local/Temp/TableauTemp/#TableauTemp_1yudhcq0efduvj1bqka4p0q8qkib.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='07/29/2026 02:14:18 PM' username='tableau_internal_user'>
           <relation name='Extract' table='[Extract].[Extract]' type='table' />
           <metadata-records>
             <metadata-record class='column'>
