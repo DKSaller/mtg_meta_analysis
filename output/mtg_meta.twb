@@ -18,162 +18,117 @@
     <preference name='ui.shelf.height' value='26' />
   </preferences>
   <datasources>
-    <datasource caption='post_nerf_combined (Multiple Connections)' inline='true' name='federated.1yphwjo1mf101p13dkljg0nqic0a' version='18.1'>
+    <datasource caption='post_ban_meta.csv (Multiple Connections)' inline='true' name='federated.1qp6p700i2ajt917x9npd1a4etec' version='18.1'>
       <connection class='federated'>
         <named-connections>
-          <named-connection caption='post_nerf_combined' name='cloudfile:googledrive-excel-direct.1735iuo0vwbnkw10xbxer0lh2m9j'>
-            <connection class='cloudfile:googledrive-excel-direct' cleaning='no' cloudFileExtension='xlsx' cloudFileId='1cAOHPg1DGqcdRLEav533iNI4eMLo5KNlmFOeSR4UGjg' cloudFileMetadata_-_folder='root' cloudFileName='post_nerf_combined.xlsx' cloudFileProvider='googledrive' cloudFileRequestURL='https://www.googleapis.com/drive/v3/files/1cAOHPg1DGqcdRLEav533iNI4eMLo5KNlmFOeSR4UGjg/export?mimeType=application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' compat='no' dataRefreshTime='' filename='post_nerf_combined.xlsx' interpretationMode='0' server='' username='donaldksaller@gmail.com' validate='no' />
+          <named-connection caption='post_ban_meta' name='textscan.0pl4eyl0lhsamo1drm8cl1s7bkyo'>
+            <connection class='textscan' directory='C:/Users/salle/Desktop/solo_projects/mtg_meta_analysis/data' filename='post_ban_meta.csv' password='' server='' />
           </named-connection>
-          <named-connection caption='pre_ban_complete' name='cloudfile:googledrive-excel-direct.171iulo0i2x1ht175ps3d1fx7zy8'>
-            <connection class='cloudfile:googledrive-excel-direct' cleaning='no' cloudFileExtension='xlsx' cloudFileId='10GjF1WHLS51s_VFHuVdoJDdjTj0hwetpMpm4d4CEZQM' cloudFileMetadata_-_folder='root' cloudFileName='pre_ban_complete.xlsx' cloudFileProvider='googledrive' cloudFileRequestURL='https://www.googleapis.com/drive/v3/files/10GjF1WHLS51s_VFHuVdoJDdjTj0hwetpMpm4d4CEZQM/export?mimeType=application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' compat='no' dataRefreshTime='' filename='pre_ban_complete.xlsx' interpretationMode='0' server='' username='donaldksaller@gmail.com' validate='no' />
+          <named-connection caption='pre_ban_meta' name='textscan.0eeirj10b0a5al1bfjosa0tcbl1t'>
+            <connection class='textscan' directory='C:/Users/salle/Desktop/solo_projects/mtg_meta_analysis/data' filename='pre_ban_meta.csv' password='' server='' />
           </named-connection>
         </named-connections>
-        <relation connection='cloudfile:googledrive-excel-direct.1735iuo0vwbnkw10xbxer0lh2m9j' name='post_nerf_combined' table='[post_nerf_combined$]' type='table'>
-          <columns gridOrigin='A1:E21:no:A1:E21:0' header='yes' outcome='6'>
-            <column datatype='string' name='Deck_Archetype' ordinal='0' />
-            <column datatype='string' name='Color_Identity' ordinal='1' />
+        <relation connection='textscan.0pl4eyl0lhsamo1drm8cl1s7bkyo' name='post_ban_meta.csv' table='[post_ban_meta#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='Deck_Archetype' ordinal='1' />
             <column datatype='real' name='Meta_Share' ordinal='2' />
-            <column datatype='string' name='Deck_Name' ordinal='3' />
-            <column datatype='string' name='Archetype_URL' ordinal='4' />
           </columns>
         </relation>
         <metadata-records>
           <metadata-record class='capability'>
             <remote-name />
             <remote-type>0</remote-type>
-            <parent-name>[post_nerf_combined]</parent-name>
+            <parent-name>[post_ban_meta.csv]</parent-name>
             <remote-alias />
             <aggregation>Count</aggregation>
             <contains-null>true</contains-null>
             <attributes>
-              <attribute datatype='integer' name='context'>0</attribute>
-              <attribute datatype='string' name='gridOrigin'>&quot;A1:E21:no:A1:E21:0&quot;</attribute>
-              <attribute datatype='boolean' name='header'>true</attribute>
-              <attribute datatype='integer' name='outcome'>6</attribute>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
             </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[post_ban_meta.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[post_ban_meta.csv_E221A9C9E6904BDCA3BADD346FF519FB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Deck_Archetype</remote-name>
-            <remote-type>130</remote-type>
+            <remote-type>129</remote-type>
             <local-name>[Deck_Archetype]</local-name>
-            <parent-name>[post_nerf_combined]</parent-name>
+            <parent-name>[post_ban_meta.csv]</parent-name>
             <remote-alias>Deck_Archetype</remote-alias>
-            <ordinal>0</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <collation flag='1' name='LEN_RUS_S2' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
-            </attributes>
-            <object-id>[post!nerf!combined_364122573A0D468F920C82604AEB85B1]</object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Color_Identity</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[Color_Identity]</local-name>
-            <parent-name>[post_nerf_combined]</parent-name>
-            <remote-alias>Color_Identity</remote-alias>
             <ordinal>1</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
             <contains-null>true</contains-null>
-            <collation flag='1' name='LEN_RUS_S2' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
-            </attributes>
-            <object-id>[post!nerf!combined_364122573A0D468F920C82604AEB85B1]</object-id>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[post_ban_meta.csv_E221A9C9E6904BDCA3BADD346FF519FB]</object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Meta_Share</remote-name>
             <remote-type>5</remote-type>
             <local-name>[Meta_Share]</local-name>
-            <parent-name>[post_nerf_combined]</parent-name>
+            <parent-name>[post_ban_meta.csv]</parent-name>
             <remote-alias>Meta_Share</remote-alias>
             <ordinal>2</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
-            <precision>15</precision>
             <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
-            </attributes>
-            <object-id>[post!nerf!combined_364122573A0D468F920C82604AEB85B1]</object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Deck_Name</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[Deck_Name]</local-name>
-            <parent-name>[post_nerf_combined]</parent-name>
-            <remote-alias>Deck_Name</remote-alias>
-            <ordinal>3</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <collation flag='1' name='LEN_RUS_S2' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
-            </attributes>
-            <object-id>[post!nerf!combined_364122573A0D468F920C82604AEB85B1]</object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Archetype_URL</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[Archetype_URL]</local-name>
-            <parent-name>[post_nerf_combined]</parent-name>
-            <remote-alias>Archetype_URL</remote-alias>
-            <ordinal>4</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <collation flag='1' name='LEN_RUS_S2' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
-            </attributes>
-            <object-id>[post!nerf!combined_364122573A0D468F920C82604AEB85B1]</object-id>
+            <object-id>[post_ban_meta.csv_E221A9C9E6904BDCA3BADD346FF519FB]</object-id>
           </metadata-record>
         </metadata-records>
       </connection>
       <aliases enabled='yes' />
-      <column caption='Archetype URL' datatype='string' name='[Archetype_URL]' role='dimension' type='nominal' />
-      <column caption='Color Identity' datatype='string' name='[Color_Identity]' role='dimension' type='nominal' />
       <column caption='Deck Archetype' datatype='string' name='[Deck_Archetype]' role='dimension' type='nominal' />
-      <column caption='Deck Name' datatype='string' name='[Deck_Name]' role='dimension' type='nominal' />
       <column caption='Meta Share' datatype='real' name='[Meta_Share]' role='measure' type='quantitative' />
-      <column caption='post_nerf_combined' datatype='table' name='[__tableau_internal_object_id__].[post!nerf!combined_364122573A0D468F920C82604AEB85B1]' role='measure' type='quantitative' />
+      <column caption='post_ban_meta.csv' datatype='table' name='[__tableau_internal_object_id__].[post_ban_meta.csv_E221A9C9E6904BDCA3BADD346FF519FB]' role='measure' type='quantitative' />
       <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
-        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/salle/AppData/Local/Temp/TableauTemp/#TableauTemp_1rx32281j2oyqw16ixk410mud2d3.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='05/20/2026 04:55:37 PM' username='tableau_internal_user'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/salle/AppData/Local/Temp/TableauTemp/#TableauTemp_19op5vx0a9pk3q1emohxw0f8kgm5.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='07/29/2026 02:00:28 PM' username='tableau_internal_user'>
           <relation name='Extract' table='[Extract].[Extract]' type='table' />
           <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>0</ordinal>
+              <family>post_ban_meta.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[post_ban_meta.csv_E221A9C9E6904BDCA3BADD346FF519FB]</object-id>
+            </metadata-record>
             <metadata-record class='column'>
               <remote-name>Deck_Archetype</remote-name>
               <remote-type>129</remote-type>
               <local-name>[Deck_Archetype]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>Deck_Archetype</remote-alias>
-              <ordinal>0</ordinal>
-              <family>post_nerf_combined</family>
-              <local-type>string</local-type>
-              <aggregation>Count</aggregation>
-              <approx-count>4</approx-count>
-              <contains-null>true</contains-null>
-              <collation flag='1' name='LEN_RUS_S2' />
-              <object-id>[post!nerf!combined_364122573A0D468F920C82604AEB85B1]</object-id>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>Color_Identity</remote-name>
-              <remote-type>129</remote-type>
-              <local-name>[Color_Identity]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>Color_Identity</remote-alias>
               <ordinal>1</ordinal>
-              <family>post_nerf_combined</family>
+              <family>post_ban_meta.csv</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>14</approx-count>
+              <approx-count>5</approx-count>
               <contains-null>true</contains-null>
-              <collation flag='1' name='LEN_RUS_S2' />
-              <object-id>[post!nerf!combined_364122573A0D468F920C82604AEB85B1]</object-id>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[post_ban_meta.csv_E221A9C9E6904BDCA3BADD346FF519FB]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Meta_Share</remote-name>
@@ -182,42 +137,12 @@
               <parent-name>[Extract]</parent-name>
               <remote-alias>Meta_Share</remote-alias>
               <ordinal>2</ordinal>
-              <family>post_nerf_combined</family>
+              <family>post_ban_meta.csv</family>
               <local-type>real</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>17</approx-count>
+              <approx-count>5</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[post!nerf!combined_364122573A0D468F920C82604AEB85B1]</object-id>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>Deck_Name</remote-name>
-              <remote-type>129</remote-type>
-              <local-name>[Deck_Name]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>Deck_Name</remote-alias>
-              <ordinal>3</ordinal>
-              <family>post_nerf_combined</family>
-              <local-type>string</local-type>
-              <aggregation>Count</aggregation>
-              <approx-count>20</approx-count>
-              <contains-null>true</contains-null>
-              <collation flag='1' name='LEN_RUS_S2' />
-              <object-id>[post!nerf!combined_364122573A0D468F920C82604AEB85B1]</object-id>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>Archetype_URL</remote-name>
-              <remote-type>129</remote-type>
-              <local-name>[Archetype_URL]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>Archetype_URL</remote-alias>
-              <ordinal>4</ordinal>
-              <family>post_nerf_combined</family>
-              <local-type>string</local-type>
-              <aggregation>Count</aggregation>
-              <approx-count>20</approx-count>
-              <contains-null>true</contains-null>
-              <collation flag='1' name='LEN_RUS_S2' />
-              <object-id>[post!nerf!combined_364122573A0D468F920C82604AEB85B1]</object-id>
+              <object-id>[post_ban_meta.csv_E221A9C9E6904BDCA3BADD346FF519FB]</object-id>
             </metadata-record>
           </metadata-records>
         </connection>
@@ -228,15 +153,13 @@
       </semantic-values>
       <object-graph>
         <objects>
-          <object caption='post_nerf_combined' id='post!nerf!combined_364122573A0D468F920C82604AEB85B1'>
+          <object caption='post_ban_meta.csv' id='post_ban_meta.csv_E221A9C9E6904BDCA3BADD346FF519FB'>
             <properties context=''>
-              <relation connection='cloudfile:googledrive-excel-direct.1735iuo0vwbnkw10xbxer0lh2m9j' name='post_nerf_combined' table='[post_nerf_combined$]' type='table'>
-                <columns gridOrigin='A1:E21:no:A1:E21:0' header='yes' outcome='6'>
-                  <column datatype='string' name='Deck_Archetype' ordinal='0' />
-                  <column datatype='string' name='Color_Identity' ordinal='1' />
+              <relation connection='textscan.0pl4eyl0lhsamo1drm8cl1s7bkyo' name='post_ban_meta.csv' table='[post_ban_meta#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='Deck_Archetype' ordinal='1' />
                   <column datatype='real' name='Meta_Share' ordinal='2' />
-                  <column datatype='string' name='Deck_Name' ordinal='3' />
-                  <column datatype='string' name='Archetype_URL' ordinal='4' />
                 </columns>
               </relation>
             </properties>
@@ -267,7 +190,7 @@
         <rows />
         <cols />
       </table>
-      <simple-id uuid='{A685A3CD-6A26-4394-8A39-088F7B7634CD}' />
+      <simple-id uuid='{0933B172-7F77-48D9-AC37-C3BC4F7FBA92}' />
     </worksheet>
   </worksheets>
   <windows source-height='30'>
@@ -292,7 +215,7 @@
           </strip>
         </edge>
       </cards>
-      <simple-id uuid='{571112A4-F26C-460A-802A-F72887F8C0C5}' />
+      <simple-id uuid='{3DCEB2A9-D7EE-43BD-82D8-BD375FA9C4D6}' />
     </window>
   </windows>
   <thumbnails>
