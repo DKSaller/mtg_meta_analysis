@@ -1,21 +1,21 @@
-,Deck_Name,Meta_Pct,Meta_Count
-0,Izzet Spellementals,20.7%,115
-1,4c Control,17.3%,96
-2,Dimir Excruciator,16.2%,90
-3,Lifegain,6.3%,35
-4,Azorius Tempo,5.6%,31
-5,Sultai Reanimator,5.2%,29
-6,Dimir Midrange,3.1%,17
-7,Mardu Discard,2.2%,12
-8,Mono-Red Aggro,2.2%,12
-9,Mono-Green Landfall,1.8%,10
-10,Jeskai Control,1.4%,8
-11,Izzet Aggro,1.4%,8
-12,Naya Delirium,1.4%,8
-13,Dimir Reanimator,1.3%,7
-14,Gruul Delirium,1.1%,6
-15,Boros Manufacturing,1.1%,6
-16,Sultai Control,0.9%,5
-17,4c Kona,0.9%,5
-18,Jeskai Artifacts,0.9%,5
-19,Azorius Momo,0.7%,4
+,Deck_Name,Archetype,Meta_Pct,Meta_Count
+0,Izzet Spellementals,Aggro,0.207,115
+1,4c Control,Control,0.17300000000000001,96
+2,Dimir Excruciator,Control,0.162,90
+3,Lifegain,Aggro,0.063,35
+4,Azorius Tempo,Aggro,0.055999999999999994,31
+5,Sultai Reanimator,Combo,0.052000000000000005,29
+6,Dimir Midrange,Midrange,0.031,17
+7,Mardu Discard,Aggro,0.022000000000000002,12
+8,Mono-Red Aggro,Aggro,0.022000000000000002,12
+9,Mono-Green Landfall,Aggro,0.018000000000000002,10
+10,Jeskai Control,Control,0.013999999999999999,8
+11,Izzet Aggro,Aggro,0.013999999999999999,8
+12,Naya Delirium,Aggro,0.013999999999999999,8
+13,Dimir Reanimator,Combo,0.013000000000000001,7
+14,Gruul Delirium,Aggro,0.011000000000000001,6
+15,Boros Manufacturing,Combo,0.011000000000000001,6
+16,Sultai Control,Control,0.009000000000000001,5
+17,4c Kona,Combo,0.009000000000000001,5
+18,Jeskai Artifacts,Midrange,0.009000000000000001,5
+19,Azorius Momo,Aggro,0.006999999999999999,4
