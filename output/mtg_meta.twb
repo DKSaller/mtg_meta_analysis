@@ -185,232 +185,6 @@
         </objects>
       </object-graph>
     </datasource>
-    <datasource caption='Sheet1 (post_vivi_meta)' inline='true' name='federated.0rbr79z007dv7p1948vrg0uiap3c' version='18.1'>
-      <connection class='federated'>
-        <named-connections>
-          <named-connection caption='post_vivi_meta' name='excel-direct.1donlx513digii17jqk8r0f3hble'>
-            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/salle/Desktop/solo_projects/mtg_meta_analysis/scripts/post_vivi_meta.xlsx' interpretationMode='0' password='' server='' validate='no' />
-          </named-connection>
-        </named-connections>
-        <relation connection='excel-direct.1donlx513digii17jqk8r0f3hble' name='Sheet1' table='[Sheet1$]' type='table'>
-          <columns gridOrigin='A1:E22:no:A1:E22:0' header='yes' outcome='6'>
-            <column datatype='string' name='Deck_Archetype' ordinal='0' />
-            <column datatype='string' name='Color_Identity' ordinal='1' />
-            <column datatype='real' name='Meta_Share' ordinal='2' />
-            <column datatype='string' name='Deck_Name' ordinal='3' />
-            <column datatype='string' name='Archetype_URL' ordinal='4' />
-          </columns>
-        </relation>
-        <metadata-records>
-          <metadata-record class='capability'>
-            <remote-name />
-            <remote-type>0</remote-type>
-            <parent-name>[Sheet1]</parent-name>
-            <remote-alias />
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='integer' name='context'>0</attribute>
-              <attribute datatype='string' name='gridOrigin'>&quot;A1:E22:no:A1:E22:0&quot;</attribute>
-              <attribute datatype='boolean' name='header'>true</attribute>
-              <attribute datatype='integer' name='outcome'>6</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Deck_Archetype</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[Deck_Archetype]</local-name>
-            <parent-name>[Sheet1]</parent-name>
-            <remote-alias>Deck_Archetype</remote-alias>
-            <ordinal>0</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <collation flag='1' name='LEN_RUS_S2' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
-            </attributes>
-            <object-id>[Sheet1_04D32C5B26994A92A1CCECBF4A6FF456]</object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Color_Identity</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[Color_Identity]</local-name>
-            <parent-name>[Sheet1]</parent-name>
-            <remote-alias>Color_Identity</remote-alias>
-            <ordinal>1</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <collation flag='1' name='LEN_RUS_S2' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
-            </attributes>
-            <object-id>[Sheet1_04D32C5B26994A92A1CCECBF4A6FF456]</object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Meta_Share</remote-name>
-            <remote-type>5</remote-type>
-            <local-name>[Meta_Share]</local-name>
-            <parent-name>[Sheet1]</parent-name>
-            <remote-alias>Meta_Share</remote-alias>
-            <ordinal>2</ordinal>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <precision>15</precision>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
-            </attributes>
-            <object-id>[Sheet1_04D32C5B26994A92A1CCECBF4A6FF456]</object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Deck_Name</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[Deck_Name]</local-name>
-            <parent-name>[Sheet1]</parent-name>
-            <remote-alias>Deck_Name</remote-alias>
-            <ordinal>3</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <collation flag='1' name='LEN_RUS_S2' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
-            </attributes>
-            <object-id>[Sheet1_04D32C5B26994A92A1CCECBF4A6FF456]</object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Archetype_URL</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[Archetype_URL]</local-name>
-            <parent-name>[Sheet1]</parent-name>
-            <remote-alias>Archetype_URL</remote-alias>
-            <ordinal>4</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <collation flag='1' name='LEN_RUS_S2' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
-            </attributes>
-            <object-id>[Sheet1_04D32C5B26994A92A1CCECBF4A6FF456]</object-id>
-          </metadata-record>
-        </metadata-records>
-      </connection>
-      <aliases enabled='yes' />
-      <column caption='Archetype URL' datatype='string' name='[Archetype_URL]' role='dimension' type='nominal' />
-      <column caption='Color Identity' datatype='string' name='[Color_Identity]' role='dimension' type='nominal' />
-      <column caption='Deck Archetype' datatype='string' name='[Deck_Archetype]' role='dimension' type='nominal' />
-      <column caption='Deck Name' datatype='string' name='[Deck_Name]' role='dimension' type='nominal' />
-      <column caption='Meta Share' datatype='real' name='[Meta_Share]' role='measure' type='quantitative' />
-      <column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_04D32C5B26994A92A1CCECBF4A6FF456]' role='measure' type='quantitative' />
-      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
-        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/salle/AppData/Local/Temp/TableauTemp/#TableauTemp_0klkcx7072pzwl1493imu1hov32a.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/07/2026 02:45:01 PM' username='tableau_internal_user'>
-          <relation name='Extract' table='[Extract].[Extract]' type='table' />
-          <metadata-records>
-            <metadata-record class='column'>
-              <remote-name>Deck_Archetype</remote-name>
-              <remote-type>129</remote-type>
-              <local-name>[Deck_Archetype]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>Deck_Archetype</remote-alias>
-              <ordinal>0</ordinal>
-              <family>Sheet1</family>
-              <local-type>string</local-type>
-              <aggregation>Count</aggregation>
-              <approx-count>5</approx-count>
-              <contains-null>true</contains-null>
-              <collation flag='1' name='LEN_RUS_S2' />
-              <object-id>[Sheet1_04D32C5B26994A92A1CCECBF4A6FF456]</object-id>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>Color_Identity</remote-name>
-              <remote-type>129</remote-type>
-              <local-name>[Color_Identity]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>Color_Identity</remote-alias>
-              <ordinal>1</ordinal>
-              <family>Sheet1</family>
-              <local-type>string</local-type>
-              <aggregation>Count</aggregation>
-              <approx-count>15</approx-count>
-              <contains-null>true</contains-null>
-              <collation flag='1' name='LEN_RUS_S2' />
-              <object-id>[Sheet1_04D32C5B26994A92A1CCECBF4A6FF456]</object-id>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>Meta_Share</remote-name>
-              <remote-type>5</remote-type>
-              <local-name>[Meta_Share]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>Meta_Share</remote-alias>
-              <ordinal>2</ordinal>
-              <family>Sheet1</family>
-              <local-type>real</local-type>
-              <aggregation>Sum</aggregation>
-              <approx-count>18</approx-count>
-              <contains-null>true</contains-null>
-              <object-id>[Sheet1_04D32C5B26994A92A1CCECBF4A6FF456]</object-id>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>Deck_Name</remote-name>
-              <remote-type>129</remote-type>
-              <local-name>[Deck_Name]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>Deck_Name</remote-alias>
-              <ordinal>3</ordinal>
-              <family>Sheet1</family>
-              <local-type>string</local-type>
-              <aggregation>Count</aggregation>
-              <approx-count>21</approx-count>
-              <contains-null>true</contains-null>
-              <collation flag='1' name='LEN_RUS_S2' />
-              <object-id>[Sheet1_04D32C5B26994A92A1CCECBF4A6FF456]</object-id>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>Archetype_URL</remote-name>
-              <remote-type>129</remote-type>
-              <local-name>[Archetype_URL]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>Archetype_URL</remote-alias>
-              <ordinal>4</ordinal>
-              <family>Sheet1</family>
-              <local-type>string</local-type>
-              <aggregation>Count</aggregation>
-              <approx-count>21</approx-count>
-              <contains-null>true</contains-null>
-              <collation flag='1' name='LEN_RUS_S2' />
-              <object-id>[Sheet1_04D32C5B26994A92A1CCECBF4A6FF456]</object-id>
-            </metadata-record>
-          </metadata-records>
-        </connection>
-      </extract>
-      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
-      <semantic-values>
-        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
-      </semantic-values>
-      <object-graph>
-        <objects>
-          <object caption='Sheet1' id='Sheet1_04D32C5B26994A92A1CCECBF4A6FF456'>
-            <properties context=''>
-              <relation connection='excel-direct.1donlx513digii17jqk8r0f3hble' name='Sheet1' table='[Sheet1$]' type='table'>
-                <columns gridOrigin='A1:E22:no:A1:E22:0' header='yes' outcome='6'>
-                  <column datatype='string' name='Deck_Archetype' ordinal='0' />
-                  <column datatype='string' name='Color_Identity' ordinal='1' />
-                  <column datatype='real' name='Meta_Share' ordinal='2' />
-                  <column datatype='string' name='Deck_Name' ordinal='3' />
-                  <column datatype='string' name='Archetype_URL' ordinal='4' />
-                </columns>
-              </relation>
-            </properties>
-            <properties context='extract'>
-              <relation name='Extract' table='[Extract].[Extract]' type='table' />
-            </properties>
-          </object>
-        </objects>
-      </object-graph>
-    </datasource>
     <datasource caption='Sheet1 (aug_bans_meta)' inline='true' name='federated.08nf0wb1w8vulo1610e3s0qbazkg' version='18.1'>
       <connection class='federated'>
         <named-connections>
@@ -601,6 +375,232 @@
         </objects>
       </object-graph>
     </datasource>
+    <datasource caption='Sheet1 (post_vivi_meta)' inline='true' name='federated.0rbr79z007dv7p1948vrg0uiap3c' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='post_vivi_meta' name='excel-direct.1donlx513digii17jqk8r0f3hble'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/salle/Desktop/solo_projects/mtg_meta_analysis/scripts/post_vivi_meta.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1donlx513digii17jqk8r0f3hble' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:E22:no:A1:E22:0' header='yes' outcome='6'>
+            <column datatype='string' name='Deck_Archetype' ordinal='0' />
+            <column datatype='string' name='Color_Identity' ordinal='1' />
+            <column datatype='real' name='Meta_Share' ordinal='2' />
+            <column datatype='string' name='Deck_Name' ordinal='3' />
+            <column datatype='string' name='Archetype_URL' ordinal='4' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:E22:no:A1:E22:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Deck_Archetype</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Deck_Archetype]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Deck_Archetype</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_04D32C5B26994A92A1CCECBF4A6FF456]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Color_Identity</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Color_Identity]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Color_Identity</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_04D32C5B26994A92A1CCECBF4A6FF456]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Meta_Share</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Meta_Share]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Meta_Share</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_04D32C5B26994A92A1CCECBF4A6FF456]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Deck_Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Deck_Name]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Deck_Name</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_04D32C5B26994A92A1CCECBF4A6FF456]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Archetype_URL</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Archetype_URL]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Archetype_URL</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_04D32C5B26994A92A1CCECBF4A6FF456]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Archetype URL' datatype='string' name='[Archetype_URL]' role='dimension' type='nominal' />
+      <column caption='Color Identity' datatype='string' name='[Color_Identity]' role='dimension' type='nominal' />
+      <column caption='Deck Archetype' datatype='string' name='[Deck_Archetype]' role='dimension' type='nominal' />
+      <column caption='Deck Name' datatype='string' name='[Deck_Name]' role='dimension' type='nominal' />
+      <column caption='Meta Share' datatype='real' name='[Meta_Share]' role='measure' type='quantitative' />
+      <column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_04D32C5B26994A92A1CCECBF4A6FF456]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/salle/AppData/Local/Temp/TableauTemp/#TableauTemp_1b757j90vffg0r164lfw70gvgnk3.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/07/2026 02:48:53 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Deck_Archetype</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Deck_Archetype]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Deck_Archetype</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Sheet1_04D32C5B26994A92A1CCECBF4A6FF456]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Color_Identity</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Color_Identity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Color_Identity</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Sheet1_04D32C5B26994A92A1CCECBF4A6FF456]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Meta_Share</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Meta_Share]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Meta_Share</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_04D32C5B26994A92A1CCECBF4A6FF456]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Deck_Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Deck_Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Deck_Name</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Sheet1_04D32C5B26994A92A1CCECBF4A6FF456]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Archetype_URL</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Archetype_URL]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Archetype_URL</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Sheet1_04D32C5B26994A92A1CCECBF4A6FF456]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_04D32C5B26994A92A1CCECBF4A6FF456'>
+            <properties context=''>
+              <relation connection='excel-direct.1donlx513digii17jqk8r0f3hble' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:E22:no:A1:E22:0' header='yes' outcome='6'>
+                  <column datatype='string' name='Deck_Archetype' ordinal='0' />
+                  <column datatype='string' name='Color_Identity' ordinal='1' />
+                  <column datatype='real' name='Meta_Share' ordinal='2' />
+                  <column datatype='string' name='Deck_Name' ordinal='3' />
+                  <column datatype='string' name='Archetype_URL' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
     <datasource caption='Sheet1 (pre_vivi_meta)' inline='true' name='federated.0idf2j20d0qmsv16ppk1u1r8095a' version='18.1'>
       <connection class='federated'>
         <named-connections>
@@ -704,7 +704,7 @@
       <column caption='Meta Share' datatype='real' name='[Meta_Share]' role='measure' type='quantitative' />
       <column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_779557C62C2947278A4696BFA78C397E]' role='measure' type='quantitative' />
       <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
-        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/salle/AppData/Local/Temp/TableauTemp/#TableauTemp_1cnrd620k6m2c71cyp5gs01yizx1.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/07/2026 02:48:40 PM' username='tableau_internal_user'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/salle/AppData/Local/Temp/TableauTemp/#TableauTemp_097n4mg08dwaaf14zc4ev0h1rtso.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/07/2026 02:52:08 PM' username='tableau_internal_user'>
           <relation name='Extract' table='[Extract].[Extract]' type='table' />
           <metadata-records>
             <metadata-record class='column'>
